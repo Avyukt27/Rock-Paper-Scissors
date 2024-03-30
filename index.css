@@ -1,0 +1,119 @@
+@charset "UTF-8";
+* {
+  text-transform: uppercase;
+  padding: 10px 30px;
+}
+
+.box {
+  display: grid;
+  grid-template-areas: "rock paper scissors" "player-label selection empty" "bot-label ai-selection empty" "unused decision empty" "unused replay empty" "player bruh bot" "player-score bruh bot-score";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  gap: 10px 10px 10px 10px 10px 10px;
+  place-items: center;
+}
+
+.🪨 {
+  background-color: gray;
+  color: black;
+  text-decoration: none;
+  font-size: 3.5em;
+  transition: 0.5s;
+  border-radius: 5px;
+  grid-area: rock;
+}
+.🪨:hover {
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 40px gray;
+}
+
+.📄 {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 3.5em;
+  transition: 0.5s;
+  border-radius: 5px;
+  grid-area: paper;
+}
+.📄:hover {
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 40px white;
+}
+
+.✂️ {
+  background-color: rgb(0, 132, 255);
+  color: black;
+  text-decoration: none;
+  font-size: 3.5em;
+  transition: 0.5s;
+  border-radius: 5px;
+  grid-area: scissors;
+}
+.✂️:hover {
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 40px rgb(0, 132, 255);
+}
+
+.🔁 {
+  background-color: rgb(188, 188, 188);
+  color: black;
+  text-decoration: none;
+  font-size: 3.5em;
+  transition: 0.5s;
+  border-radius: 5px;
+  grid-area: replay;
+}
+.🔁:hover {
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 40px rgb(188, 188, 188);
+}
+
+.player-label {
+  grid-area: player-label;
+  color: white;
+}
+
+.bot-label {
+  grid-area: bot-label;
+  color: white;
+}
+
+.selection {
+  opacity: 0;
+  transition: opacity 300ms;
+  grid-area: selection;
+  color: black;
+}
+
+.bot-selection {
+  opacity: 0;
+  transition: opacity 300ms;
+  grid-area: ai-selection;
+  color: black;
+}
+
+.decision {
+  grid-area: decision;
+  color: white;
+}
+
+.player {
+  grid-area: player;
+  color: white;
+}
+
+.bot {
+  grid-area: bot;
+  color: white;
+}
+
+.player-score {
+  grid-area: player-score;
+  color: white;
+}
+
+.bot-score {
+  grid-area: bot-score;
+  color: white;
+}/*# sourceMappingURL=index.css.map */

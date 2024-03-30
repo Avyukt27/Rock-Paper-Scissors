@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="index.css">
+        <title>Rock Paper Scissors</title>
+    </head>
+
+    <body bgcolor="black">
+        <div class="box" id="box">
+            <button onclick="rock()" class="🪨" id="rock" type="button">🪨</button>
+            <button onclick="paper()" class="📄" id="paper" type="button">📄</button>
+            <button onclick="scissors()" class="✂️" id="scissors" type="button">✂️</button>
+            <button onclick="refresh()" class="🔁" id="replay" type="button">Replay</button>
+            <h1 class="player-label">Player:</h1>
+            <h1 class="bot-label">Bot:</h1>
+            <h1 class="selection" id="selection"></h1>
+            <h1 class="bot-selection" id="botSelection"></h1>
+            <h1 class="decision" id="decision"></h1>
+            <h1 class="player">Player Score</h1>
+            <h1 class="bot">Bot Score</h1>
+            <h1 class="player-score" id="playerScore">0</h1>
+            <h1 class="bot-score" id="botScore">0</h1>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
